@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Adam Parrilla's Portfolio: Recursive Hexadecimal Sudoku Solver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Adam Parrilla</a>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href="index.html">CS Projects</a></li>
+						<li><a href="artwork.html">Artwork</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="generic.html">Generic Page</a></li>
+						<li><a href="elements.html">Elements Reference</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="ajp808@hawaii.edu" class="fa fa-envelope"><span class="label"></span></a></li>
+						<li><a href="https://github.com/adamjparrilla" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/adam-joseph-parrilla" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Recursive Hexadecimal Sudoku Solver</h1>
+									<p></p>
+									<hr />
+								</header>
+								<h4>The Problem</h4>
+								<p>During the spring semester of my sophomore year, one of the homework assignments I had to do was to create a hexadecimal recursive sudoku solver. Implementing recursive backtracking functions to solve a 16x16 sudoku puzzle. Starting this process the project was set up by our professor Cam Moore, who tasked us with creating a solveSudoku and legalValues functions.</p>
+								<hr />
+								<h4>The Solution</h4>
+								<p>The solveSudoku function works by checking an inputted 16x16 puzzle for empty cells represented by a value of -1. Then once an empty cell is found the solveSudoku function creates a list of possible inputs from the legalValues function. The solveSudoku function will then input the value and continue to solve the next empty value until it encounters a cell with no legal value. Then, the function will backtrack to the previously solved cell and try the next possible value. Continuing to recursively do this until the puzzle is solved or if the last legal value of the first cell is used and the puzzle is decided to be not solvable.</p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-6"><span class="image fit"><img src="images/sudoku_1.jpg" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/sudoku_2.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<hr />
+								<h4>Experience</h4>
+								<p>This assignment was a great learning experience for me since before this I had barely a clue about recursive topics at all. I was able to understand what recursion is and with the help of my professor and peers learn how recursion can be implemented in scenarios such as this sudoku puzzle. While I know that my recursive skills still have a ways to go, I think that this project was a big step for me moving forward toward getting a strong understanding of more complex coding topics like recursion.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>Contact Me!</li><li><a href="ajp808@hawaii.edu" class="fa fa-envelope"><span class="label"></span></a></li><li><a href="https://github.com/adamjparrilla" class="icon brands fa-github"><span class="label">GitHub</span></a></li><li><a href="https://www.linkedin.com/in/adam-joseph-parrilla" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li></ul>
+				</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
